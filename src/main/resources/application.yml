@@ -1,0 +1,14 @@
+spring:
+  main:
+    banner-mode: "off"
+telegram:
+  bot:
+    token: "${BOT_TOKEN}"
+    username: "${BOT_USERNAME}"
+translation:
+  api:
+    url: "http://localhost:5000/translate"
+  max-length: 500
+
+
+
