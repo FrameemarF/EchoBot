@@ -1,17 +1,27 @@
 package com.example.translatorbot;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.example.translatorbot.config.BotConfig;
+import com.example.translatorbot.keyboards.Keyboards;
 
-/**
- * Точка входа TranslateBot. Запускает Spring Boot контекст,
- * который поднимает бины и регистрирует бота в Telegram API.
- */
-@SpringBootApplication
+import java.io.InputStream;
+import java.util.Properties;
+
 public class TranslatorBotApplication {
 
-    /** Запускает приложение. */
-    public static void main(String[] args) {
-        SpringApplication.run(TranslatorBotApplication.class, args);
+    public static void main(String[] args) throws Exception {
+        Properties props = new Properties();
+        try (InputStream in = TranslatorBotApplication.class
+                .getResourceAsStream("/config.properties")) {
+            if (in == null) {
+                throw new IllegalStateException("config.properties not found in classpath");
+            }
+            props.load(in);
+        }
+
+        BotConfig config = new BotConfig(props);
+        Keyboards keyboards = new Keyboards();
+
+        System.out.println("Config loaded. Bot username: " + config.getBotUsername());
+        System.out.println("Keyboards ready: " + keyboards.mainMenu().getKeyboard().size() + " rows");
     }
 }
