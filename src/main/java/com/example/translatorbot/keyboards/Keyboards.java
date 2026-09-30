@@ -3,66 +3,48 @@ package com.example.translatorbot.keyboards;
 import com.example.translatorbot.model.Language;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardRow;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Keyboards {
 
-    /**
-     * Создаёт клавиатуру главного меню с кнопками «Перевести текст» и «Помощь».
-     *
-     * @return inline-клавиатура главного меню
-     */
     public InlineKeyboardMarkup mainMenu() {
-        return new InlineKeyboardMarkup(List.of(List.of(
-                button("🌐 Перевести текст", "menu:translate"),
-                button("❓ Помощь", "menu:help")
-        )));
+        InlineKeyboardRow row = new InlineKeyboardRow();
+        row.add(button("🌐 Перевести текст", "menu:translate"));
+        row.add(button("❓ Помощь", "menu:help"));
+        return new InlineKeyboardMarkup(List.of(row));
     }
 
-    /**
-     * Универсальная клавиатура выбора языка.
-     * @param callbackPrefix "src" для выбора источника, "tgt" для выбора цели
-     */
     public InlineKeyboardMarkup languageSelection(String callbackPrefix) {
-        List<List<InlineKeyboardButton>> rows = new ArrayList<>();
+        List<InlineKeyboardRow> rows = new ArrayList<>();
         for (Language lang : Language.values()) {
-            rows.add(List.of(button(
+            InlineKeyboardRow row = new InlineKeyboardRow();
+            row.add(button(
                     lang.getDisplayName(),
                     callbackPrefix + ":" + lang.getCode()
-            )));
+            ));
+            rows.add(row);
         }
         return new InlineKeyboardMarkup(rows);
     }
 
-    /**
-     * Создаёт клавиатуру с действиями после перевода:
-     * «Перевести ещё», «Сменить язык», «В меню».
-     *
-     * @return inline-клавиатура с действиями над результатом
-     */
     public InlineKeyboardMarkup resultActions() {
-        return new InlineKeyboardMarkup(List.of(
-                List.of(
-                        button("🔁 Перевести ещё", "result:more"),
-                        button("🌐 Сменить язык", "result:change_lang")
-                ),
-                List.of(button("🏠 В меню", "result:menu"))
-        ));
+        InlineKeyboardRow firstRow = new InlineKeyboardRow();
+        firstRow.add(button("🔁 Перевести ещё", "result:more"));
+        firstRow.add(button("🌐 Сменить язык", "result:change_lang"));
+
+        InlineKeyboardRow secondRow = new InlineKeyboardRow();
+        secondRow.add(button("🏠 В меню", "result:menu"));
+
+        return new InlineKeyboardMarkup(List.of(firstRow, secondRow));
     }
 
-    /**
-     * Создаёт inline-кнопку с указанным текстом и callback-данными.
-     *
-     * @param text         текст, отображаемый на кнопке
-     * @param callbackData данные, отправляемые боту при нажатии
-     * @return готовая inline-кнопка
-     */
     private InlineKeyboardButton button(String text, String callbackData) {
-        InlineKeyboardButton b = new InlineKeyboardButton();
-        b.setText(text);
-        b.setCallbackData(callbackData);
-        return b;
+        return InlineKeyboardButton.builder()
+                .text(text)
+                .callbackData(callbackData)
+                .build();
     }
 }
