@@ -18,9 +18,7 @@ public class Main {
     public static void main(String[] args) throws TelegramApiException {
         String botToken = System.getenv("BOT_TOKEN");
         if (botToken == null || botToken.isBlank()) {
-            throw new IllegalStateException(
-                    "Не задан токен бота. Установите переменную окружения BOT_TOKEN "
-                            + "(в IntelliJ IDEA: Run Configuration -> Environment variables).");
+            throw new IllegalStateException("Не задан токен бота. Установите переменную окружения BOT_TOKEN ");
         }
 
         TelegramClient telegramClient = new OkHttpTelegramClient(botToken);

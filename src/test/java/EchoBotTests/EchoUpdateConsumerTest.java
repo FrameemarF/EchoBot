@@ -1,3 +1,5 @@
+package EchoBotTests;
+
 import org.example.EchoReplyGenerator;
 import org.example.EchoUpdateConsumer;
 import org.junit.jupiter.api.Test;

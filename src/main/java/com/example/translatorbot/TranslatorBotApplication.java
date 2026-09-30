@@ -9,6 +9,9 @@ import com.example.translatorbot.service.TranslationService;
 import com.example.translatorbot.service.TranslationServiceImpl;
 import com.example.translatorbot.state.SessionManager;
 import com.example.translatorbot.util.Messages;
+import org.telegram.telegrambots.client.okhttp.OkHttpTelegramClient;
+import org.telegram.telegrambots.longpolling.TelegramBotsLongPollingApplication;
+import org.telegram.telegrambots.meta.generics.TelegramClient;
 
 import java.io.InputStream;
 import java.util.Properties;
@@ -51,9 +54,12 @@ public class TranslatorBotApplication {
         CallbackHandler callbackHandler = new CallbackHandler(
                 sessionManager, messages, keyboards);
 
-        TranslatorBotService bot = new TranslatorBotService(
-                config, commandHandler, callbackHandler);
+        TelegramClient telegramClient = new OkHttpTelegramClient(config.getBotToken());
 
-        bot.register();
+        TranslatorBotService bot = new TranslatorBotService(
+                telegramClient, commandHandler, callbackHandler);
+
+        TelegramBotsLongPollingApplication app = new TelegramBotsLongPollingApplication();
+        app.registerBot(config.getBotToken(), bot);
     }
 }
