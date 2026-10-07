@@ -78,7 +78,7 @@
       <recent name="C:\Users\yuntc\Desktop\proga\oop\project with anton" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LanguageTest">
+  <component name="RunManager" selected="JUnit.BotConfigTest">
     <configuration name="org.translatorBot.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.translatorBot.Main" />
       <module name="echo-bot" />
@@ -140,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LanguageTest" />
         <item itemvalue="JUnit.BotConfigTest" />
+        <item itemvalue="JUnit.LanguageTest" />
         <item itemvalue="Application.org.translatorBot.Main" />
         <item itemvalue="JUnit.translatorBot in echo-bot" />
         <item itemvalue="JUnit.java in echo-bot" />
