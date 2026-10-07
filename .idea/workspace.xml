@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c66043c-1eba-42c6-a7e7-13ed090deccd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Java/org/translatorBot/LibreTranslateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Java/org/translatorBot/LibreTranslateServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/org/translatorBot/TranslationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/translatorBot/BotConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/translatorBot/Language.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/translatorBot/Sender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/translatorBot/BotConfigTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
