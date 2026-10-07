@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c66043c-1eba-42c6-a7e7-13ed090deccd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/org/translatorBot/BotConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/org/translatorBot/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Java/org/translatorBot/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application_example.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Java/org/translatorBot/BotConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Java/org/translatorBot/LanguageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Java/org/translatorBot/SenderTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3JrkA56Aa3YjK9n6fjH8IlJTxNr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TranslatorBotApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.org.TranslatorBot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.org.translatorBot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in project-with-anton.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BotConfigTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LanguageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in echo-bot.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.translatorBot in echo-bot.executor&quot;: &quot;Coverage&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.TranslatorBotApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;second__step&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yuntc/Desktop/proga/oop/project with anton&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yuntc\Desktop\proga\oop\project with anton" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LanguageTest">
+    <configuration name="org.translatorBot.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.translatorBot.Main" />
+      <module name="echo-bot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.translatorBot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BotConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="echo-bot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.translatorBot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.translatorBot" />
+      <option name="MAIN_CLASS_NAME" value="org.translatorBot.BotConfigTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LanguageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="echo-bot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.translatorBot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.translatorBot" />
+      <option name="MAIN_CLASS_NAME" value="org.translatorBot.LanguageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in echo-bot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="echo-bot" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="translatorBot in echo-bot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="echo-bot" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/org/translatorBot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LanguageTest" />
+        <item itemvalue="JUnit.BotConfigTest" />
+        <item itemvalue="Application.org.translatorBot.Main" />
+        <item itemvalue="JUnit.translatorBot in echo-bot" />
+        <item itemvalue="JUnit.java in echo-bot" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c66043c-1eba-42c6-a7e7-13ed090deccd" name="Changes" comment="" />
+      <created>1790426429010</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790426429010</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/project_with_anton$translatorBot_in_echo_bot.ic" NAME="translatorBot in echo-bot Coverage Results" MODIFIED="1791263137230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>
