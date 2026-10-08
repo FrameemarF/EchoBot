@@ -175,7 +175,7 @@ public class Router implements LongPollingUpdateConsumer {
      */
     private void pickTarget(long chatId, Session s, Language target) {
         if (target == s.getSource()) {
-            sender.send(chatId, "⚠️ Языки совпадают. Выбери другой целевой язык.",
+            sender.send(chatId, "⚠\uFE0F Языки совпадают. Выбери другой целевой язык.",
                     ui.targetChoice());
             return;
         }

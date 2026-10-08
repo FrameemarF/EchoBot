@@ -23,10 +23,10 @@ public class Ui {
                     "/back       — вернуться на предыдущий шаг";
 
     public final String askText      = "✏️ Отправь текст для перевода.";
-    public final String emptyText    = "⚠️ Текст пустой. Отправь, пожалуйста, непустой текст.";
-    public final String tooLong      = "⚠️ Текст слишком длинный (макс. 4000 символов).";
-    public final String unknownCmd   = "⚠️ Команда не распознана.";
-    public final String backToMenu   = "↩️ Возвращаю в главное меню.";
+    public final String emptyText    = "⚠\uFE0F Текст пустой. Отправь, пожалуйста, непустой текст.";
+    public final String tooLong      = "⚠\uFE0F  Текст слишком длинный (макс. 4000 символов).";
+    public final String unknownCmd   = "⚠\uFE0F  Команда не распознана.";
+    public final String backToMenu   = "↩\uFE0F Возвращаю в главное меню.";
     public final String useStart     = "ℹ️ Чтобы начать, нажми /start или /translate.";
     public final String translateErr = "❌ Не удалось перевести. Попробуй позже.";
 
@@ -38,8 +38,8 @@ public class Ui {
     public InlineKeyboardMarkup mainMenu() {
         return InlineKeyboardMarkup.builder()
                 .keyboardRow(new InlineKeyboardRow(
-                        button("Перевести текст", "TRANSLATE"),
-                        button("Помощь", "HELP")))
+                        button("\uD83C\uDF10 Перевести текст", "TRANSLATE"),
+                        button("❓ Помощь", "HELP")))
                 .build();
     }
 
@@ -51,9 +51,10 @@ public class Ui {
     public InlineKeyboardMarkup afterTranslation() {
         return InlineKeyboardMarkup.builder()
                 .keyboardRow(new InlineKeyboardRow(
-                        button("Перевести ещё", "MORE"),
-                        button("Сменить язык", "CHANGE_LANG"),
-                        button("В меню", "MENU")))
+                        button("\uD83D\uDD01 Перевести ещё", "MORE"),
+                        button("\uD83C\uDF10 Сменить язык", "CHANGE_LANG")))
+                .keyboardRow(new InlineKeyboardRow(
+                        button("\uD83C\uDFE0 В меню", "MENU")))
                 .build();
     }
 
