@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$" dumb="true">
+      <excludeFolder url="file://$MODULE_DIR$/src/main/java/org/example/EchoReplyGenerator.java" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/java/org/example/EchoUpdateConsumer.java" />
+      <excludeFolder url="file://$MODULE_DIR$/src/main/java/org/example/Main.java" />
+      <excludeFolder url="file://$MODULE_DIR$/src/test/java/EchoReplyGeneratorTest.java" />
+      <excludeFolder url="file://$MODULE_DIR$/src/test/java/EchoUpdateConsumerTest.java" />
+    </content>
+  </component>
+</module>
